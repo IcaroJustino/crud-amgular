@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="cards">
+    <div *ngFor="let solicitacao of solicitacoes" (click)="selecionarSolicitacao(solicitacao)" class="card">
+      <h3>{{ solicitacao.nome }}</h3>
+      <p>{{ solicitacao.descricao }}</p>
+    </div>
+  </div>
+  <div class="detalhes">
+    <app-solicitacao-detalhes [solicitacao]="solicitacaoSelecionada"></app-solicitacao-detalhes>
+  </div>
+</div>

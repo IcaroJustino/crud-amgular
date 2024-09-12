@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+}
+
+.cards {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  border: 1px solid #ccc;
+  padding: 16px;
+  margin: 8px;
+  cursor: pointer;
+}
+
+.detalhes {
+  flex: 1;
+  padding: 16px;
+  border-left: 1px solid #ccc;
+}
